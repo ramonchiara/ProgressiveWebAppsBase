@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="lojaApp" ng-controller="lojaCtrl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Minha Loja</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="js/libs/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="js/libs/twitter-bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Minha Loja</h1>
+                </div>
+                <div class="row" ng-view></div>
+            </div>
+        </div>
+        <script src="js/libs/jquery/jquery.js" type="text/javascript"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/libs/angular.js/angular.js" type="text/javascript"></script>
+        <script src="js/libs/angular.js/angular-route.js" type="text/javascript"></script>
+        <script src="js/loja.js" type="text/javascript"></script>
+    </body>
+</html>

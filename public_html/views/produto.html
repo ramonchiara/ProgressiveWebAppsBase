@@ -1,0 +1,18 @@
+                    <div ng-show="p === null">
+                        <div class="col-xs-12 col-sm-9">
+                            <p class="alert alert-warning">Produto não encontrado!</p>
+                            <p><a href="#!/" class="btn btn-info">Voltar</a></p>
+                        </div>
+                    </div>
+                    <div ng-hide="p === null">
+                        <div class="col-xs-12">
+                            <h1>{{p.nome}}</h1>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img id="imagem" src="http://lorempixel.com/100/100/abstract/{{p.id}}" alt="{{p.nome}}" class="img-responsive img-thumbnail"/>
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <p>{{p.preco| currency}}</p>
+                            <p><a href="#!/" class="btn btn-info">Voltar</a></p>
+                        </div>
+                    </div>
